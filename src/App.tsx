@@ -20,12 +20,12 @@ const skills = [
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    image:
-      "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=80",
+    title: "DevSwap",
+    image: "/devswap.png.png",
     description:
-      "Full-stack store with secure auth, product management, cart flow, and Stripe payments.",
-    stack: ["React", "Node.js", "MongoDB", "Tailwind"]
+      "Developer-focused platform for project collaboration, skill exchange, and networking.",
+    stack: ["React", "Node.js", "MongoDB", "Express"],
+    github: "https://github.com/saurabhchauhan0001/Devswap"
   },
   {
     title: "Team Task Manager",
@@ -33,7 +33,8 @@ const projects = [
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
     description:
       "Collaborative project board with role-based access, deadlines, and real-time status updates.",
-    stack: ["React", "Express", "PostgreSQL", "Socket.IO"]
+    stack: ["React", "Express", "PostgreSQL", "Socket.IO"],
+    github: "https://github.com/saurabhchauhan0001"
   },
   {
     title: "AI Support Dashboard",
@@ -41,7 +42,8 @@ const projects = [
       "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
     description:
       "Analytics dashboard for customer conversations with filters, insights, and export reports.",
-    stack: ["TypeScript", "React", "Node.js", "Charting"]
+    stack: ["TypeScript", "React", "Node.js", "Charting"],
+    github: "https://github.com/saurabhchauhan0001"
   }
 ];
 
@@ -220,6 +222,14 @@ export default function App() {
                     </span>
                   ))}
                 </div>
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-flex rounded-md border border-blue-400/40 px-3 py-1.5 text-sm text-blue-200 transition hover:border-blue-300 hover:text-blue-100"
+                >
+                  GitHub
+                </a>
                 </div>
               </article>
             ))}
