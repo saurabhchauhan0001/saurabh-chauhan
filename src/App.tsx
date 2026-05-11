@@ -28,23 +28,24 @@ const projects = [
     github: "https://github.com/saurabhchauhan0001/Devswap"
   },
   {
-    title: "Team Task Manager",
+    title: "Weather App",
     image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+      "/weather.png",
     description:
       "Collaborative project board with role-based access, deadlines, and real-time status updates.",
-    stack: ["React", "Express", "PostgreSQL", "Socket.IO"],
-    github: "https://github.com/saurabhchauhan0001"
+    stack: ["React", "HTML", "CSS", "Vercel"],
+    github: "https://github.com/saurabhchauhan0001/weather"
   },
-  {
-    title: "AI Support Dashboard",
-    image:
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "Analytics dashboard for customer conversations with filters, insights, and export reports.",
-    stack: ["TypeScript", "React", "Node.js", "Charting"],
-    github: "https://github.com/saurabhchauhan0001"
-  }
+  // Third project area
+  // {
+  //   title: "AI Support Dashboard",
+  //   image:
+  //     "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+  //   description:
+  //     "Analytics dashboard for customer conversations with filters, insights, and export reports.",
+  //   stack: ["TypeScript", "React", "Node.js", "Charting"],
+  //   github: "https://github.com/saurabhchauhan0001"
+  // }
 ];
 
 const socialLinks = [
@@ -273,4 +274,3 @@ export default function App() {
     </div>
   );
 }
-
