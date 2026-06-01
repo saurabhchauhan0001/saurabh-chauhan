@@ -28,13 +28,12 @@ const projects = [
     github: "https://github.com/saurabhchauhan0001/Spend-Wise.git"
   },
   {
-    title: "Weather App",
-    image:
-      "/weather.png",
+    title: "Chatify",
+    image: "/chatiyf.png.png",
     description:
-      "Collaborative project board with role-based access, deadlines, and real-time status updates.",
-    stack: ["React", "HTML", "CSS", "Vercel"],
-    github: "https://github.com/saurabhchauhan0001/weather"
+      "Real-time chat application for responsive conversations with a clean messaging interface.",
+    stack: ["React", "Node.js", "Socket.IO", "MongoDB"],
+    github: "https://github.com/saurabhchauhan0001/chatify.git"
   },
   // Third project area
   // {
