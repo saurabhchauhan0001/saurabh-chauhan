@@ -20,12 +20,12 @@ const skills = [
 
 const projects = [
   {
-    title: "DevSwap",
-    image: "/devswap.png.png",
+    title: "Spend Wise",
+    image: "/ndwise.png.png",
     description:
-      "Developer-focused platform for project collaboration, skill exchange, and networking.",
+      "Expense tracking app for managing spending, budgets, and financial insights.",
     stack: ["React", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/saurabhchauhan0001/Devswap"
+    github: "https://github.com/saurabhchauhan0001/Spend-Wise.git"
   },
   {
     title: "Weather App",
