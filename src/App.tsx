@@ -1,6 +1,9 @@
 import { useState } from "react";
 import type { FormEvent } from "react";
 
+const skillBadge = (label: string, color: string) =>
+  `data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='${color.replace("#", "%23")}'/%3E%3Ctext x='32' y='38' text-anchor='middle' font-family='Arial,sans-serif' font-size='15' font-weight='700' fill='white'%3E${label}%3C/text%3E%3C/svg%3E`;
+
 const skills = [
   { name: "HTML", logo: "https://cdn.simpleicons.org/html5/E34F26" },
   { name: "CSS", logo: "https://cdn.simpleicons.org/css/1572B6" },
@@ -15,7 +18,16 @@ const skills = [
   { name: "VS Code", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
   { name: "Socket.IO", logo: "https://cdn.simpleicons.org/socketdotio/FFFFFF" },
   { name: "Cloudinary", logo: "https://cdn.simpleicons.org/cloudinary/3448C5" },
-  { name: "Redux Toolkit", logo: "https://cdn.simpleicons.org/redux/764ABC" }
+  { name: "Redux Toolkit", logo: "https://cdn.simpleicons.org/redux/764ABC" },
+  { name: "Docker", logo: "https://cdn.simpleicons.org/docker/2496ED" },
+  { name: "Redis", logo: "https://cdn.simpleicons.org/redis/DC382D" },
+  { name: "System Design", logo: skillBadge("SD", "#0f766e") },
+  { name: "LangChain", logo: skillBadge("LC", "#1c3b2f") },
+  { name: "LangGraph", logo: skillBadge("LG", "#2563eb") },
+  { name: "RAG", logo: skillBadge("RAG", "#7c3aed") },
+  { name: "Vector DB", logo: skillBadge("VDB", "#0891b2") },
+  { name: "AWS", logo: "https://cdn.simpleicons.org/amazonwebservices/FF9900" },
+  { name: "CI/CD", logo: "https://cdn.simpleicons.org/githubactions/2088FF" }
 ];
 
 const projects = [
@@ -35,16 +47,14 @@ const projects = [
     stack: ["React", "Node.js", "Socket.IO", "MongoDB"],
     github: "https://github.com/saurabhchauhan0001/chatify.git"
   },
-  // Third project area
-  // {
-  //   title: "AI Support Dashboard",
-  //   image:
-  //     "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
-  //   description:
-  //     "Analytics dashboard for customer conversations with filters, insights, and export reports.",
-  //   stack: ["TypeScript", "React", "Node.js", "Charting"],
-  //   github: "https://github.com/saurabhchauhan0001"
-  // }
+  {
+    title: "KOL Tracker",
+    image: "/kol.png.png",
+    description:
+      "Expert relationship registry for searching, filtering, exporting, and managing KOL records.",
+    stack: ["React", "Tailwind CSS", "JavaScript", "Vercel"],
+    github: "https://github.com/saurabhchauhan0001/kol.git"
+  }
 ];
 
 const socialLinks = [
